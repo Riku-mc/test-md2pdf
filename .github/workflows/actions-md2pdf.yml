@@ -4,15 +4,15 @@ on:
     branches: [ main ]
 jobs:
   convert_via_pandoc:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - run: |
           mkdir output
       - uses: docker://ghcr.io/44smkn/pandoc/ja:0.1.1
         with:
           args: README.md -s -o readme.pdf --pdf-engine=wkhtmltopdf
-      - uses: actions/upload-artifact@master
+      - uses: actions/upload-artifact@main
         with:
           name: curriculum-vitae
-          path: output/blog.pdf
+          path: output/markdown.pdf
