@@ -3,7 +3,9 @@ Markdown to PDF を GitHub Actions で走らせるテスト用リポジトリ
 
 # 知見整理
 
-参考サイト様：<https://44smkn.hatenadiary.com/entry/2021/03/23/224925>
+参考サイト様
+- <https://44smkn.hatenadiary.com/entry/2021/03/23/224925>
+- <https://aadojo.alterbooth.com/entry/2022/12/08/161755>
 
 ひつようなもの
 - 知識
