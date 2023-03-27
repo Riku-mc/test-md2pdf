@@ -11,8 +11,8 @@ jobs:
           mkdir output
       - uses: docker://ghcr.io/44smkn/pandoc/ja:0.1.1
         with:
-          args: README.md -s -o output/readme.pdf --pdf-engine=wkhtmltopdf
+          args: README.md -s -o output/readme.pdf --pdf-engine=tectonic
       - uses: actions/upload-artifact@main
         with:
-          name: curriculum-vitae
+          name: files
           path: output/readme.pdf
